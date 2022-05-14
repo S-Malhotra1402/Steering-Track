@@ -5,6 +5,19 @@ The goal of the project is to train a Deep Network to replicate the human steeri
 ## The dataset
 Data for this task can be gathered with the Udacity simulator itself. Indeed, when the simulator is set to training mode, the car is controlled by the human though the keyboard, and frames and steering directions are stored to disk. For those who want to avoid this process, Udacity made also available an "off-the-shelf" training set. For this project, I employed this latter.
 
+## Visualizing training data
+Here's how a typical sample looks like. We have three frames from different cameras as well as the associated steering direction.
+![image](https://user-images.githubusercontent.com/105145597/168440224-9258c2e1-e583-40a1-b30f-1066ff7a0e81.png)
+
+First things first, every frame is preprocessed by cropping the upper and lower part of the frame: in this way we discard information that is probably useless for the task of predicting the steering direction. Now our input frames look like these:
+
+![image](https://user-images.githubusercontent.com/105145597/168440267-7619c501-d255-414e-873f-1d7c24f24cf1.png)
+
+As we see, each frame is associated to a certain steering angle. Unfortunately, there's a huge skew in the ground truth data distribution: as we can see the steering angle distribution is strongly biased towards the zero.
+
+
+
+
 Udacity training set is constituted by 8036 samples. For each sample, two main information are provided:
 1. three frames from the frontal, left and right camera respectively
 2. the corresponding steering direction
