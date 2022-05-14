@@ -2,8 +2,8 @@
 ## Behavioural Cloning
 The goal of the project is to train a Deep Network to replicate the human steering behavior while driving, thus being able to drive autonomously on a simulator provided by Udacity. To this purpose, the network takes as input the frame of the frontal camera (say, a roof-mounted camera) and predicts the steering direction at each instant.
 
-## Demo here:
-https://youtube.com/shorts/dAe9_q_kv5I?feature=share
+## Sample Demonstration:
+https://youtu.be/v5y_K16DBD8
 
 ## The dataset
 Data for this task can be gathered with the Udacity simulator itself. Indeed, when the simulator is set to training mode, the car is controlled by the human though the keyboard, and frames and steering directions are stored to disk. For those who want to avoid this process, Udacity made also available an "off-the-shelf" training set. For this project, I employed this latter.
